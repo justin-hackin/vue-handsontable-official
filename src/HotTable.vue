@@ -1,5 +1,7 @@
 <template>
-  <div :id="this.root"></div>
+  <no-ssr placeholder="Loading...">
+    <div :id="this.root"></div>
+  </no-ssr>
 </template>
 
 <script>
@@ -13,7 +15,6 @@
     updateHotSettings,
     updateBulkHotSettings
   } from './helpers';
-
   export default {
     name: 'HotTable',
     props: propFactory(),
@@ -24,5 +25,5 @@
 </script>
 
 <style>
-  @import "~handsontable/dist/handsontable.full.css";
+  @import "handsontable/dist/handsontable.full.css";
 </style>
