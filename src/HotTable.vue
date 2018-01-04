@@ -1,7 +1,5 @@
 <template>
-  <no-ssr placeholder="Loading...">
-    <div :id="this.root"></div>
-  </no-ssr>
+  <div :id="this.root"></div>
 </template>
 
 <script>
